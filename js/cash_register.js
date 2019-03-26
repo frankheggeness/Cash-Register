@@ -4,7 +4,7 @@ var display = document.getElementById('display')
 var calc = calculatorModule()
 var total =calc.totalC
 var balance = '0';
-setInterval(function(){display.innerHTML = total;}, 1)
+setInterval(function(){display.value = total;}, 1)
 
 // button functions below
 

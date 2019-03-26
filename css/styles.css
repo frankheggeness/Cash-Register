@@ -40,3 +40,14 @@ body{
     display: inline-flex;
     text-align: center;
 }
+.button{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+/* buttons 
+border-radius: 50%;
+width: 40px;
+height: 40px;
+*/

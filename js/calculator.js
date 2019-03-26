@@ -103,8 +103,8 @@ var add = function(str){
     var splitStr =str.split('+')
         str.split('+');
         console.log(splitStr)
-        var parse0 = parseInt(splitStr[0])
-        var parse1 = parseInt(splitStr[1])
+        var parse0 = parseFloat(splitStr[0])
+        var parse1 = parseFloat(splitStr[1])
         console.log(typeof parse0)
         var sum = parse0 + parse1;
         sum.toString();
@@ -117,8 +117,8 @@ var multiply = function(str){
     var splitStr =str.split('*')
         str.split('*');
         console.log(splitStr)
-        var parse0 = parseInt(splitStr[0])
-        var parse1 = parseInt(splitStr[1])
+        var parse0 = parseFloat(splitStr[0])
+        var parse1 = parseFloat(splitStr[1])
         var sum = parse0 * parse1;
         sum.toString();
         total=sum;
@@ -129,8 +129,8 @@ var divide = function(str){
     var splitStr =str.split('/')
         str.split('/');
         console.log(splitStr)
-        var parse0 = parseInt(splitStr[0])
-        var parse1 = parseInt(splitStr[1])
+        var parse0 = parseFloat(splitStr[0])
+        var parse1 = parseFloat(splitStr[1])
         console.log(typeof parse0)
         var sum = parse0 / parse1;
         sum.toString();
@@ -142,8 +142,8 @@ var subtract = function(str){
     var splitStr =str.split('-')
         str.split('-');
         console.log(splitStr)
-        var parse0 = parseInt(splitStr[0])
-        var parse1 = parseInt(splitStr[1])
+        var parse0 = parseFloat(splitStr[0])
+        var parse1 = parseFloat(splitStr[1])
         console.log(typeof parse0)
         var sum = parse0 - parse1;
         sum.toString();
