@@ -125,8 +125,22 @@ function withdrawTot(){
     newWith.toString();
     balance = newWith;
 }
+function cj1Tot(){
+    total = '4.99'
+}
+function cj2Tot(){
+    total = '5.99'
+}
+function cj3Tot(){
+    total = '7.99'
+}
 
-
+function salesTax(){
+    var totNum = parseInt(total)
+    var tax = totNum * .04
+    var newTotal = totNum + tax;
+    total = newTotal;
+}
 
 var seven = document.getElementById('sevenButton')
 // event listeners below
@@ -151,5 +165,9 @@ depositCashButton.addEventListener('click', depositTot);
 zeroButton.addEventListener('click', zeroTot);
 periodButton.addEventListener('click', periodTot);
 withdrawButton.addEventListener('click', withdrawTot);
+cj1.addEventListener('click', cj1Tot);
+cj2.addEventListener('click',cj2Tot);
+cj3.addEventListener('click', cj3Tot)
+salesTaxButton.addEventListener('click', salesTax);
 
 
