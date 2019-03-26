@@ -103,8 +103,8 @@ function depositTot(){
     if(balance === '0'){
         balance = total;
     }else{
-        var newBal = parseInt(balance);
-        var newTotal = parseInt(total)
+        var newBal = parseFloat(balance);
+        var newTotal = parseFloat(total)
         var newDep = newBal + newTotal;
         newDep.toString();
         balance = newDep;
@@ -119,8 +119,8 @@ function periodTot(){
 }
 function withdrawTot(){
     // balance = balance - total;
-    var newBal = parseInt(balance);
-    newTotal = parseInt(total);
+    var newBal = parseFloat(balance);
+    newTotal = parseFloat(total);
     var newWith = newBal - newTotal;
     newWith.toString();
     balance = newWith;
@@ -136,10 +136,10 @@ function cj3Tot(){
 }
 
 function salesTax(){
-    var totNum = parseInt(total)
+    var totNum = parseFloat(total)
     var tax = totNum * .04
     var newTotal = totNum + tax;
-    total = newTotal;
+    total = newTotal.toString();
 }
 
 var seven = document.getElementById('sevenButton')
