@@ -2,6 +2,12 @@ body{
     background-color: #B8173E
     
 }
+#title{
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 30px;
+}
 #register{
     display: flex;
     flex-direction: column;
@@ -14,6 +20,9 @@ body{
 #display{
     text-align: center;
     display: inline-flex;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+
 }
 #row1{
     display: flex;
@@ -31,19 +40,32 @@ body{
 #row4{
     display: flex;
     text-align: center;
+    
 }
 #row5{
     display: flex
+    
     
 }
 #moneysign{
     display: inline-flex;
     text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 30px;
 }
 .button{
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 141px;
+    width: 141px;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+#titleBox{
+    background-color: white;
+    text-align: center;
+    border-radius: 20%;
 }
 
 /* buttons 

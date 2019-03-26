@@ -65,7 +65,7 @@ function getBal(){
     total = balance;
 }
 function getEqual(){
-    findOperator(total)
+    calc.findOperator(total)
 }
 function dubZeroTot(){
     total= total+'00'
@@ -103,7 +103,11 @@ function depositTot(){
     if(balance === '0'){
         balance = total;
     }else{
-    balance = balance + total;
+        var newBal = parseInt(balance);
+        var newTotal = parseInt(total)
+        var newDep = newBal + newTotal;
+        newDep.toString();
+        balance = newDep;
     }
 }
 function zeroTot(){
@@ -114,7 +118,12 @@ function periodTot(){
     total = total + '.'
 }
 function withdrawTot(){
-    balance = balance - total;
+    // balance = balance - total;
+    var newBal = parseInt(balance);
+    newTotal = parseInt(total);
+    var newWith = newBal - newTotal;
+    newWith.toString();
+    balance = newWith;
 }
 
 
